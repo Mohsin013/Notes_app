@@ -1,0 +1,30 @@
+how many passwords => 2
+1. pass coming req.body == hashed pass in db
+
+
+optimizations
+1. we need to implement authentication using auth middleware
+2. problem => any authenticated user can do CRUD on any persons notes.
+solution => authorization
+
+relationships
+
+save id of dependent entity in independent entity
+
+notes scheme we should store user id => which note belongs to which user
+
+
+1 user can have mutiple notes 
+1 - many
+
+
+req => payload => middlware first => create note route
+
+middleware => decoded => userdetails
+
+before creating note i am attacting user details to the req body in the middlware 
+
+Deployement of backend:
+1. Cyclic (evaluation) - one deployement 
+2. Railway
+3. Render
